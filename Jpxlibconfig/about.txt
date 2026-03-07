@@ -6,3 +6,4 @@ autor : AMnottdev
 langgue : python
 funcion : a simple UI on jpx
 description : NONE
+depidence : requiments.txt
