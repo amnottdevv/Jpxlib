@@ -1,0 +1,101 @@
+// ====================================================
+// Jpxconf - Configuration File untuk JPX Library
+// Author: AMNOTdev
+// Project: JpXlib Feature Collection
+// ====================================================
+
+[project]
+name = "JpXlib Feature Collection"
+version = "1.0.0"
+author = "AMNOTdev"
+description = "Koleksi library dan fitur untuk JPX programming language"
+license = "MIT"
+repository = "https://github.com/amnottdevv/Jpxlib"
+created = "2026-03-09"
+last_update = "2026-03-09"
+
+[company]
+name = "AMNOTdev"
+website = "https://github.com/AMNOTdev"
+email = "amnotdev@github.com"
+founded = 2026
+location = "Indonesia"
+type = "Open Source Developer"
+
+[features]
+total_libraries = 35
+categories = ["core", "utility", "web", "system", "media"]
+status = "active"
+documentation = true
+examples_included = true
+
+[core_libraries]
+string = { version = "1.2.0", status = "stable", functions = 76 }
+math = { version = "1.1.0", status = "stable", functions = 42 }
+fs = { version = "1.0.0", status = "stable", functions = 28 }
+json = { version = "1.0.0", status = "beta", functions = 18 }
+datetime = { version = "0.9.0", status = "beta", functions = 15 }
+
+[utility_libraries]
+color = { version = "1.0.0", status = "stable", features = ["red", "green", "blue", "reset"] }
+random = { version = "1.0.0", status = "stable", algorithms = ["basic", "secure"] }
+hash = { version = "0.8.0", status = "beta", algorithms = ["md5", "sha1", "sha256"] }
+env = { version = "0.5.0", status = "alpha", functions = 8 }
+scanner = { version = "0.4.0", status = "alpha" }
+
+[web_libraries]
+http = { version = "0.7.0", status = "beta", methods = ["get", "post", "download"] }
+requests = { version = "1.0.0", status = "stable" }
+speedreq = { version = "1.0.0", status = "stable" }
+url = { version = "0.3.0", status = "alpha" }
+
+[system_libraries]
+win32sys = { version = "0.9.0", status = "beta", platform = "windows" }
+win32ui = { version = "0.5.0", status = "alpha", platform = "windows" }
+notification = { version = "0.4.0", status = "alpha" }
+subnotif = { version = "0.3.0", status = "alpha" }
+beuty = { version = "0.2.0", status = "alpha" }
+
+[media_libraries]
+JpXUi = { version = "0.1.0", status = "experimental" }
+image = { version = "0.0.1", status = "planned" }
+audio = { version = "0.0.1", status = "planned" }
+
+[dependencies]
+python_version = "3.8+"
+platforms = ["windows", "linux", "macos"]
+requirements = ["colorama", "requests", "pillow (planned)"]
+
+[build]
+compiler = "JPX Interpreter"
+output_dir = "./dist"
+docs_dir = "./docs"
+examples_dir = "./examples"
+tests_dir = "./tests"
+
+[documentation]
+readme = "README.md"
+wiki = true
+api_docs = true
+tutorials = [
+    "Getting Started",
+    "String Manipulation",
+    "File System Operations",
+    "Working with JSON",
+    "HTTP Requests",
+    "Color Output"
+]
+
+
+[roadmap]
+version_1_1 = "Add crypto library"
+version_1_2 = "Improve HTTP module"
+version_1_3 = "Add database support"
+version_2_0 = "GUI toolkit"
+version_2_1 = "Game development features"
+
+[metadata]
+generated_by = "AMNOTdev"
+config_version = "1.0"
+format = "Jpxconf INI-style"
+encoding = "UTF-8"
